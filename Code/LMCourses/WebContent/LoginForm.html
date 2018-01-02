@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<!-- Login form -->
+	<div id="displayLoginForm">
+		<!-- Popup Div Starts Here -->
+		<div id="loginForm">
+			<!-- Contact Us Form -->
+			<form action="AdminLoginServlet" id="form" method="post"
+				name="form1" onsubmit="return check_empty_login()">
+				<img id="close" src="images/close.jpg" onclick="loginForm_hide()">
+				<h2 id="formHeading">Admin Login</h2>
+				<hr id="formLine">
+				<input id="username" name="username" placeholder="Username" type="text">
+				<input id="password" name="password" placeholder="Password" type="password">
+				<br> <br>
+				<input type="submit" id="submit">
+			</form>
+		</div>
+		<!-- Popup Div Ends Here -->
+	</div>
+</body>
+</html>
